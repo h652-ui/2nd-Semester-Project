@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scene2" prefHeight="400.0" prefWidth="676.0" styleClass="bodybig" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.logincontroller">
+    <effect>
+        <Blend />
+    </effect>
+    <children>
+        <Button fx:id="loginbutton" layoutX="214.0" layoutY="271.0" mnemonicParsing="false" onAction="#loginbuttonaction" prefHeight="34.0" prefWidth="108.0" text="Log In">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <TextField fx:id="username" layoutX="268.0" layoutY="126.0" prefHeight="34.0" prefWidth="189.0" promptText="Username" />
+        <PasswordField fx:id="password" layoutX="268.0" layoutY="174.0" prefHeight="34.0" prefWidth="189.0" promptText="Password" AnchorPane.bottomAnchor="192.0" AnchorPane.leftAnchor="268.0" AnchorPane.rightAnchor="219.0" AnchorPane.topAnchor="174.0" />
+        <Button fx:id="cancelbutton" layoutX="293.0" layoutY="324.0" mnemonicParsing="false" onAction="#cancelbuttonaction" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: #FF0000;" text="Exit" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <ImageView fx:id="profile" fitHeight="34.0" fitWidth="178.0" layoutX="225.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/Profile.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="lock" fitHeight="34.0" fitWidth="34.0" layoutX="225.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/Lock.jpg" />
+            </image>
+        </ImageView>
+      <Button fx:id="registerbutton" layoutX="369.0" layoutY="271.0" mnemonicParsing="false" onAction="#registerbuttonaction" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: #32CD32;" text="Register">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="logInMessage" alignment="CENTER" layoutX="265.0" layoutY="235.0" prefHeight="20.0" prefWidth="166.0" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="logo" fitHeight="150.0" fitWidth="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/logo.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="298.0" layoutY="34.0" text="Login" textFill="WHITE">
+         <font>
+            <Font name="Bradley Hand ITC" size="39.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="logo1" fitHeight="150.0" fitWidth="152.0" layoutX="518.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0">
+         <image>
+            <Image url="@../Images/logo1.jpg" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="667.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ResturantWindow">
+   <children>
+      <AnchorPane layoutX="-3.0" prefHeight="63.0" prefWidth="677.0" styleClass="bodybig" stylesheets="@style.css">
+         <children>
+            <Label fx:id="r_name" layoutX="14.0" layoutY="9.0" prefHeight="45.0" prefWidth="161.0" textFill="WHITE">
+               <font>
+                  <Font name="Bradley Hand ITC" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="258.0" layoutY="9.0" prefHeight="45.0" prefWidth="161.0" text="Current Orders" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB" size="32.0" />
+               </font>
+            </Label>
+            <Button fx:id="log_out" layoutX="551.0" layoutY="14.0" mnemonicParsing="false" onAction="#out_action" prefHeight="35.0" prefWidth="112.0" style="-fx-background-color: red;" text="Log Out" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <ScrollPane layoutY="63.0" prefHeight="323.0" prefWidth="666.0">
+         <content>
+            <TableView fx:id="resturant_order_table" prefHeight="378.0" prefWidth="925.0">
+              <columns>
+                  <TableColumn fx:id="ID" prefWidth="75.0" text="Order_ID" />
+                <TableColumn fx:id="username" prefWidth="120.0" text="Username" />
+                <TableColumn fx:id="name" prefWidth="120.0" text="Name" />
+                  <TableColumn fx:id="hostel" minWidth="120.0" prefWidth="140.0" text="Hostel" />
+                  <TableColumn fx:id="product" prefWidth="120.0" text="Product" />
+                  <TableColumn fx:id="quantity" prefWidth="120.0" text="Quantity" />
+                  <TableColumn fx:id="price" prefWidth="120.0" text="Price" />
+                  <TableColumn fx:id="phone" prefWidth="120.0" text="Phone Number" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <AnchorPane layoutY="393.0" prefHeight="63.0" prefWidth="674.0" styleClass="bodybig" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0">
+         <children>
+            <Button fx:id="trans_btn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#trans_window" prefHeight="35.0" prefWidth="130.0" style="-fx-background-color: #10bec7;" text="Transaction History" />
+            <Button fx:id="complete_btn" layoutX="530.0" layoutY="14.0" mnemonicParsing="false" onAction="#complete_order" prefHeight="35.0" prefWidth="130.0" style="-fx-background-color: #06c72d;" text="Complete" />
+            <Label fx:id="selection" alignment="CENTER" layoutX="215.0" layoutY="18.0" prefHeight="17.0" prefWidth="206.0" textFill="RED">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="completion" alignment="CENTER" layoutX="227.0" layoutY="18.0" prefHeight="17.0" prefWidth="206.0" textFill="#1aff00">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

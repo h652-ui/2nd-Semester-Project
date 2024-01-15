@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UserTable">
+   <children>
+      <AnchorPane prefHeight="65.0" prefWidth="600.0" styleClass="bodybig" stylesheets="@style.css">
+         <children>
+            <Label alignment="CENTER" layoutX="258.0" layoutY="9.0" prefHeight="31.0" prefWidth="85.0" text="Users" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Agency FB" size="38.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="logo" fitHeight="53.0" fitWidth="53.0" layoutX="475.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/logo.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="logo1" fitHeight="53.0" fitWidth="53.0" layoutX="533.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/logo1.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="back_btn" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#back_action" style="-fx-background-color: red;" text="&lt;-Back" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="65.0" fitWidth="200.0" layoutX="156.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true" />
+      <ScrollPane layoutX="-1.0" layoutY="65.0" prefHeight="336.0" prefWidth="600.0" AnchorPane.rightAnchor="0.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="340.0" prefWidth="600.0">
+               <children>
+                  <TableView fx:id="user_table" prefHeight="336.0" prefWidth="600.0">
+                    <columns>
+                      <TableColumn fx:id="user" prefWidth="150.0" text="Username" />
+                      <TableColumn fx:id="pass" prefWidth="150.0" text="Password" />
+                        <TableColumn fx:id="balance" prefWidth="150.0" text="Wallet" />
+                        <TableColumn fx:id="status" prefWidth="150.0" text="Statuts" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

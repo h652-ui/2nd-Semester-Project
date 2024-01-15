@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="444.0" prefWidth="589.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.c3Menu">
+   <children>
+      <AnchorPane layoutX="-2.0" prefHeight="66.0" prefWidth="612.0" styleClass="bodybig" stylesheets="@style.css">
+         <children>
+            <Label alignment="CENTER" layoutX="223.0" layoutY="11.0" prefHeight="44.0" prefWidth="167.0" text="Concordia 3" textFill="WHITE">
+               <font>
+                  <Font name="Bradley Hand ITC" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="margalla_image" fitHeight="379.0" fitWidth="634.0" layoutY="65.0" opacity="0.37" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/C3.png" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="c_bbq" layoutX="85.0" layoutY="122.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="117.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="c_burger" layoutX="85.0" layoutY="297.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="117.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="c_chips" layoutX="85.0" layoutY="235.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="117.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="c_karahi" layoutX="85.0" layoutY="179.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="117.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <Button layoutX="379.0" layoutY="120.0" mnemonicParsing="false" onAction="#bq_increment" prefHeight="25.0" prefWidth="38.0" text="+" />
+      <Button layoutX="379.0" layoutY="177.0" mnemonicParsing="false" onAction="#k_increment" prefHeight="25.0" prefWidth="38.0" text="+" />
+      <Button layoutX="379.0" layoutY="233.0" mnemonicParsing="false" onAction="#c_increment" prefHeight="25.0" prefWidth="38.0" text="+" />
+      <Button layoutX="379.0" layoutY="295.0" mnemonicParsing="false" onAction="#b_increment" prefHeight="25.0" prefWidth="38.0" text="+" />
+      <Button layoutX="321.0" layoutY="120.0" mnemonicParsing="false" onAction="#bq_decrement" prefHeight="25.0" prefWidth="38.0" text="-" />
+      <Button layoutX="321.0" layoutY="177.0" mnemonicParsing="false" onAction="#k_decrement" prefHeight="25.0" prefWidth="38.0" text="-" />
+      <Button layoutX="321.0" layoutY="233.0" mnemonicParsing="false" onAction="#c_decrement" prefHeight="25.0" prefWidth="38.0" text="-" />
+      <Button layoutX="321.0" layoutY="295.0" mnemonicParsing="false" onAction="#b_decrement" prefHeight="25.0" prefWidth="38.0" text="-" />
+      <Label fx:id="b_count" alignment="CENTER" layoutX="359.0" layoutY="124.0" prefHeight="17.0" prefWidth="20.0" text="0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="k_count" alignment="CENTER" layoutX="359.0" layoutY="181.0" prefHeight="17.0" prefWidth="20.0" text="0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="c_count" alignment="CENTER" layoutX="359.0" layoutY="237.0" prefHeight="17.0" prefWidth="20.0" text="0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="bu_count" alignment="CENTER" layoutX="359.0" layoutY="299.0" prefHeight="17.0" prefWidth="20.0" text="0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="t_label" alignment="CENTER" layoutX="244.0" layoutY="363.0" prefHeight="25.0" prefWidth="117.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="not_label" alignment="CENTER" layoutX="244.0" layoutY="405.0" prefHeight="17.0" prefWidth="117.0" textFill="RED" />
+      <Button layoutX="477.0" layoutY="173.0" mnemonicParsing="false" onAction="#o_action" prefHeight="32.0" prefWidth="104.0" style="-fx-background-color: green;" text="Order" textFill="WHITE" />
+      <Button fx:id="back" layoutX="477.0" layoutY="230.0" mnemonicParsing="false" onAction="#b_action" prefHeight="32.0" prefWidth="104.0" style="-fx-background-color: red;" text="Back " textFill="WHITE" />
+      <Label fx:id="order_success" alignment="CENTER" layoutX="180.0" layoutY="346.0" prefHeight="35.0" prefWidth="244.0" textFill="#3da12b">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="b_price" layoutX="214.0" layoutY="123.0" text="Label">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="k_price" layoutX="214.0" layoutY="180.0" text="Label">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="c_price" layoutX="214.0" layoutY="235.0" text="Label">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="bu_price" layoutX="214.0" layoutY="297.0" text="Label">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

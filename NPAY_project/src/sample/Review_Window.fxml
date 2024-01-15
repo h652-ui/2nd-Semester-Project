@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="476.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Review_Window">
+   <children>
+      <ScrollPane layoutY="63.0" prefHeight="360.0" prefWidth="584.0">
+         <content>
+            <TableView fx:id="review_table" prefHeight="356.0" prefWidth="583.0">
+               <columns>
+                  <TableColumn fx:id="col_consumer" prefWidth="130.0" text="Consumer" />
+                  <TableColumn fx:id="col_product" prefWidth="117.0" text="Product" />
+                  <TableColumn fx:id="col_cafe" prefWidth="120.0" text="Cafe" />
+                  <TableColumn fx:id="col_stars" minWidth="2.0" prefWidth="79.0" text="Stars" />
+                  <TableColumn fx:id="col_date" prefWidth="139.0" text="Date" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <AnchorPane layoutY="423.0" prefHeight="58.0" prefWidth="584.0" styleClass="bodybig" stylesheets="@style.css">
+         <children>
+            <Button fx:id="review_btn" layoutX="456.0" layoutY="14.0" mnemonicParsing="false" onAction="#review_reviews" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: green;" text="Add Review" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="back_to" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back_to_main" style="-fx-background-color: red;" text="Back to Main Menu" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="64.0" prefWidth="584.0" styleClass="bodybig" stylesheets="@style.css">
+         <children>
+            <Label alignment="CENTER" layoutX="174.0" layoutY="6.0" prefHeight="52.0" prefWidth="237.0" text="Reviews" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bradley Hand ITC" size="37.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="381.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.C1Menu">
+   <children>
+      <AnchorPane prefHeight="50.0" prefWidth="600.0" styleClass="bodybig" stylesheets="@style.css" AnchorPane.bottomAnchor="331.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="226.0" layoutY="6.0" prefHeight="28.0" prefWidth="148.0" text="Concordia 1" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bradley Hand ITC" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="c1_image" fitHeight="331.0" fitWidth="608.0" layoutX="-5.0" layoutY="50.0" opacity="0.36" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="-3.0" AnchorPane.topAnchor="50.0">
+         <image>
+            <Image url="@../Images/C1.png" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="c_icecream" layoutX="94.0" layoutY="87.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="c_Coffee" layoutX="94.0" layoutY="255.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="c_Nestea" layoutX="94.0" layoutY="199.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="c_donut" layoutX="94.0" layoutY="142.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="104.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="i_label" layoutX="358.0" layoutY="88.0" prefHeight="17.0" prefWidth="15.0" text="0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="d_label" layoutX="358.0" layoutY="143.0" prefHeight="17.0" prefWidth="15.0" text="0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="n_label" layoutX="358.0" layoutY="200.0" prefHeight="17.0" prefWidth="15.0" text="0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="c_label" layoutX="358.0" layoutY="256.0" prefHeight="17.0" prefWidth="15.0" text="0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="ice_increment" layoutX="382.0" layoutY="85.0" mnemonicParsing="false" onAction="#i_increment" prefHeight="25.0" prefWidth="38.0" text="+">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="donut_increment" layoutX="382.0" layoutY="140.0" mnemonicParsing="false" onAction="#d_increment" prefHeight="25.0" prefWidth="38.0" text="+">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="tea_increment" layoutX="382.0" layoutY="197.0" mnemonicParsing="false" onAction="#n_increment" prefHeight="25.0" prefWidth="38.0" text="+">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="coffee_increment" layoutX="382.0" layoutY="253.0" mnemonicParsing="false" onAction="#c_increment" prefHeight="25.0" prefWidth="38.0" text="+">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="ice_decrement" layoutX="313.0" layoutY="85.0" mnemonicParsing="false" onAction="#i_decrement" prefHeight="25.0" prefWidth="38.0" text="-">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="coffee_decrement" layoutX="313.0" layoutY="253.0" mnemonicParsing="false" onAction="#c_decrement" prefHeight="25.0" prefWidth="38.0" text="-">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="tea_decrement" layoutX="313.0" layoutY="197.0" mnemonicParsing="false" onAction="#n_decrement" prefHeight="25.0" prefWidth="38.0" text="-">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="donut_decrement" layoutX="313.0" layoutY="140.0" mnemonicParsing="false" onAction="#d_decrement" prefHeight="25.0" prefWidth="38.0" text="-">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="460.0" layoutY="137.0" mnemonicParsing="false" onAction="#o_action" prefHeight="32.0" prefWidth="104.0" style="-fx-background-color: green;" text="Order" textFill="WHITE" />
+      <Button fx:id="back" layoutX="460.0" layoutY="193.0" mnemonicParsing="false" onAction="#b_action" prefHeight="32.0" prefWidth="104.0" style="-fx-background-color: red;" text="Back " textFill="WHITE" />
+      <Label fx:id="not_label" alignment="CENTER" layoutX="219.0" layoutY="346.0" prefHeight="17.0" prefWidth="148.0" textFill="#ff0505" />
+      <Label fx:id="t_label" alignment="CENTER" layoutX="219.0" layoutY="315.0" prefHeight="17.0" prefWidth="148.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="order_success" alignment="CENTER" layoutX="171.0" layoutY="298.0" prefHeight="35.0" prefWidth="244.0" textFill="#3da12b">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="i_price" layoutX="219.0" layoutY="89.0" prefHeight="17.0" prefWidth="28.0" />
+      <Label fx:id="c_price" layoutX="219.0" layoutY="144.0" prefHeight="17.0" prefWidth="28.0" />
+      <Label fx:id="n_price" layoutX="219.0" layoutY="201.0" prefHeight="17.0" prefWidth="28.0" />
+      <Label fx:id="d_price" layoutX="225.0" layoutY="257.0" prefHeight="17.0" prefWidth="28.0" />
+   </children>
+</AnchorPane>
